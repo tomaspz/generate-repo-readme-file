@@ -6,7 +6,7 @@ The README.md is traditionally written in uppercase characters, so it is more pr
 
 The README.md file should be the first file you create in a new project. It should be populated with information every time you update the project. It should be also the last file to finish, in order to show the finish product of your project with an animated gif or a screenshot of your deployed web app.
 
-The README.md file should be placed in the top level directory of the project. Code hosting services such as [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/), and [GitLab](https://about.gitlab.com/) will look for the Readme file and display it along with the list of files and directories in your project.
+The README.md file should be placed in the top level directory of the project. Code hosting services such as [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/), and [GitLab](https://about.gitlab.com/) will look for the README.md file and display it along with the list of files and directories in your project.
 
 The README.md file can be written in any text file format, but the most common is __markdown__ because it allows to add some lightweight formatting.
 

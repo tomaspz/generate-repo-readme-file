@@ -10,6 +10,46 @@ The README.md file should be placed in the top level directory of the project. C
 
 The README.md file can be written in any text file format, but the most common is __markdown__ because it allows to add some lightweight formatting.
 
+A CLI application will allow for quick and easy generation of a project README.md file to get started quickly. This will allow a project creator to spend more time working on finishing the project and less time creating a good README.md file.
+
+### What this application does
+
+This is a command-line application that dynamically generates a README.md from a user's input. The application is invoked at the CLI with the command:
+
+```sh
+node index.js
+```
+
+1. The user is prompted for their GitHub username. 
+2. In the background, the GitHub username is used to retrieve the user's GitHub email and profile image. 
+3. The user is prompted with questions about their project:
+    * At least one badge specific to the repository
+    * User GitHub profile picture
+    * User GitHub email
+    * Project title
+    * Description
+    * Table of Contents
+    * Installation
+    * Usage
+    * License
+    * Contributing
+    * Tests
+    * Questions
+
+### User Story
+
+```
+AS A developer
+
+I WANT a README generator
+
+SO THAT I can easily put together a good README for a new project
+```
+
+
+
+  
+
 ### Suggestions for a good README.md file
 
 Every project is different and some suggestions may not apply to the project. It is always better to have a too long and detailed README.md file than a too short one. Suggestions:

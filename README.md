@@ -44,6 +44,15 @@ AS A developer
 I WANT a README generator
 
 SO THAT I can easily put together a good README for a new project
+
+WHEN I start my project in the command-line,
+THEN I want to easily answer the required questions to create a good README.md file
+
+WHEN I work on the README.md file,
+THEN I want my GitHub email and picture included automatically
+
+
+
 ```
 
 

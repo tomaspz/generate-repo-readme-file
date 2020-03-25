@@ -8,27 +8,27 @@ The README.md file should be the first file you create in a new project. It shou
 
 The README.md file should be placed in the top level directory of the project. Code hosting services such as [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/), and [GitLab](https://about.gitlab.com/) will look for the Readme file and display it along with the list of files and directories in your project.
 
-The README.md file can be written in any text file format, but the most common is Markdown because it allows to add some lightweight formatting.
+The README.md file can be written in any text file format, but the most common is __markdown__ because it allows to add some lightweight formatting.
 
-### Suggestions for a good Readme.md file
+### Suggestions for a good README.md file
 
-Every project is different and some suggestions may not apply to the project. It is always better to have a too long and detailed Readme.md file than a too short one. Suggestions:
+Every project is different and some suggestions may not apply to the project. It is always better to have a too long and detailed README.md file than a too short one. Suggestions:
 
-* Project name: a self-explaining name for the project.
-* Project description: a good description of the project, describing what the project can do for the user.
-* Links: add links to any reference that might be unfamiliar to the visitors. 
-* List of Features. 
-* Alternatives to the project.
-* Badges: these are small images with metadata. They can indicate multiple things, like which tests passed for the project. We used [Shields](https://shields.io/) to add some badges. 
-* Screenshots, Gifs, Videos: it is a good idea to include screenshots, animated gifs or videos. We used [ttygif](https://github.com/icholy/ttygif) for the animated gifs.
-* Requirements: include all necessary information if the project only runs in a specific context (Ex: ES6, MacOS X) or has dependencies that have to be installed manually.
-* Installation instructions: consider that whoever is reading the readme.md file is a novice and need assistance with the installation. List each step in the installation process to remove any ambiguity and make things easier for the user. 
-* Usage: provide a lot of examples to the user and show the expected output. Provide links to the examples if they are too long to include in the Readme.md file.
-* Support: where can the users go for help?. You can provide an issue tracker, a chat room, or an email address.
-* Future development: provide ideas for future releases.
-* Contributions: are you open to contributions? What are the requirements to accept contributions?.
-* Documentation: provide any documentation to developers that want to use your project and make changes. Document commands to lint the code. Have instructions to run tests in a server or in a browser.
-* Authors: list your contributions.
-* Acknowledgment: show appreciation for people that have contributed to the project.
-* License: for open source projects, say how it is licensed.
-* Project status: add a note at the top of the Readme.md file about the development status of the project. 
+* __Project Name__: a self-explaining name for the project.
+* __Project Description__: a good description of the project, describing what the project can do for the user.
+* __Links__: add links to any reference that might be unfamiliar to the visitors. 
+* __Features__. 
+* __Project Alternatives__.
+* __Badges__: these are small images with metadata. They can indicate multiple things, like which tests passed for the project. We used [Shields](https://shields.io/) to add some badges. 
+* __Screenshots, Gifs, or Videos__: it is a good idea to include screenshots, animated gifs or videos. We used [ttygif](https://github.com/icholy/ttygif) for the animated gifs.
+* __Requirements__: include all necessary information if the project only runs in a specific context (Ex: ES6, MacOS X) or has dependencies that have to be installed manually.
+* __Installation Instructions__: consider that whoever is reading the readme.md file is a novice and need assistance with the installation. List each step in the installation process to remove any ambiguity and make things easier for the user. 
+* __Usage__: provide a lot of examples to the user and show the expected output. Provide links to the examples if they are too long to include in the Readme.md file.
+* __Support__: where can the users go for help?. You can provide an issue tracker, a chat room, or an email address.
+* __Future Development__: provide ideas for future releases.
+* __Contributions__: are you open to contributions? What are the requirements to accept contributions?.
+* __Documentation__: provide any documentation to developers that want to use your project and make changes. Document commands to lint the code. Have instructions to run tests in a server or in a browser.
+* __Authors__: list your contributions or your collaborator's contributions.
+* __Acknowledgment__: show appreciation for people that have contributed to the project.
+* __License__: for open source projects, say how it is licensed.
+* __Project Status__: add a note at the top of the Readme.md file about the development status of the project. 

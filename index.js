@@ -26,9 +26,32 @@ inquirer.prompt([
     {type: "input", message: questions[8], name: "tests", default: "No tests" },
     {type: "input", message: questions[9], name: "questions", default: "No questions" }
   ])
-  .then(function(answer) {
-    console.log(answer);
-    // `https://img.shields.io/static/v1?label=License&message=${license}&color=brightgreen`
+  .then(answer => {
+      const readmeFileText = `
+        # Project Title: \n
+        ${answer.projectTitle}  \n
+        ![License Badge](https://img.shields.io/static/v1?label=License&message=${answer.license}&color=brightgreen) \n
+        ### Project Description: \n
+        ${answer.projectDescription} \n
+        ### Table of Contents:\n 
+        ${answer.tableContents} \n
+        ### Installation Instructions: \n
+        ${answer.installationInstructions} \n
+        ### Usage: \n
+        ${answer.usage} \n
+        ### Contributors: \n
+        ${answer.contributors} \n
+        ### Tests: \n
+        ${answer.tests} \n
+        ### Questions: \n
+        ${answer.questions}
+        `;
+        fs.appendFile("README.md", readmeFileText, err => {
+            if (err) {
+              return console.log(err);
+            }
+            console.log("The README.md file has been written!");
+        })
   })
   .catch(err => {
       if(err) throw err;
@@ -36,9 +59,9 @@ inquirer.prompt([
   });
 
 
-function writeToFile(fileName, answer) {
-    fileName = answer.name.toLowerCase().split(" ").join("") + ".json";
-    fs.writeFile(fileName, JSON.stringify(answer, null, "\t"), function(err){
+function writeToFile(fileName, data) {
+    fileName = data.name.toLowerCase().split(" ").join("") + ".json";
+    fs.writeFile(fileName, JSON.stringify(data, null, "\t"), function(err){
         if(err) {
             return err;
         }

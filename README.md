@@ -1,5 +1,7 @@
 # Generate Repository README.md File
 
+![Animated Gif](./cli-readme-file.gif)
+
 The README.md file is extremely important because it introduces and explains your projects. It contains vital information to understand what the project is about. It should answer most of the audience's questions about how to use the repository and collaborate.
 
 The README.md is traditionally written in uppercase characters, so it is more prominent. Althought, it is not mandatory to be uppercase.

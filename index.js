@@ -1,77 +1,49 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const axios = require("axios");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
-const questions = [
-    "What is your GitHub username?: ", 
-    "What type of license are you using?: ", 
-    "What is the project title?: ", 
-    "Please, provide a description of your project: ", 
-    "Provide the table of contents: ", 
-    "Provide the installation instructions: ", 
-    "Provide the usage: ",  
-    "Please, list the contributors to the project: ", 
-    "Provide information about the tests: ", 
-    "Do you want to add any questions?: "
-];
+const questions = [];
 
-inquirer.prompt([
-    {type: "input", message: questions[0], name: "userName"},
-    {type: "list", message: questions[1], name: "license", choices: ["MIT", "Public", "GNU", "Copyleft", "Proprietary"]},
-    {type: "input", message: questions[2], name: "projectTitle" },
-    {type: "input", message: questions[3], name: "projectDescription" },
-    {type: "input", message: questions[4], name: "tableContents", 
-        default: `<li>Project Title</li><li>Description</li><li>Installation</li><li>Usage</li><li>Contributors</li><li>Tests</li><li>Questions</li>`},
-    {type: "input", message: questions[5], name: "installationInstructions", default: "Run npm install" },
-    {type: "input", message: questions[6], name: "usage", default: "Follow instructions" },
-    {type: "input", message: questions[7], name: "contributors", default: "No contributors" },
-    {type: "input", message: questions[8], name: "tests", default: "No tests" },
-    {type: "input", message: questions[9], name: "questions", default: "No questions" }
+inquirer.prompt([ 
+    {type: "input", message: "What is your GitHub username?: ", name: "userName"},
+    {type: "list", message: "What type of license are you using?: ", name: "license", choices: ["MIT", "Public", "GNU", "Copyleft", "Proprietary"]},
+    {type: "input", message: "What is the project title?: ", name: "projectTitle" },
+    {type: "input", message: "Please, provide a description of your project: ", name: "projectDescription" },
+    {type: "input", message: "Provide the table of contents: ", name: "tableContents", 
+        default: ``},
+    {type: "input", message: "Provide the installation instructions: ", name: "installationInstructions", default: "Run npm install" },
+    {type: "input", message: "Provide the usage: ", name: "usage", default: "Follow instructions" },
+    {type: "input", message: "Please, list the contributors to the project: ", name: "contributors", default: "No contributors" },
+    {type: "input", message: "Provide information about the tests: ", name: "tests", default: "No tests" },
+    {type: "input", message: "Do you want to add any questions?: ", name: "questions", default: "No questions" }
   ])
   .then(answer => {
+      // console.log(answer);
+      const readmeFileInquirerText = generateMarkdown(answer);
+      fs.appendFile(`${answer.userName}-README.md`, readmeFileInquirerText, err => {
+        if (err) {
+          return console.log(err);
+        }
+        console.log("The inquirer text has been written!");
+    });
 
     axios
     .get(`https://api.github.com/users/${answer.userName}`)
     .then(function(response) {
-      console.log(response.data);
-      const readmeFileText = `<h1>Project Title: ${answer.projectTitle}</h1>
-      <hr>
-      <img src="https://img.shields.io/static/v1?label=License&message=${answer.license}&color=brightgreen" alt="License badge"/>
-      <img src="https://cdn.rawgit.com/jongracecox/anybadge/master/examples/awesomeness.svg" alt="Awesome badge"/>
-      <hr>
-      <h4>Project Description:</h4>
-      <p>${answer.projectDescription}</p>
-      <hr>
-      <h4>Table of Contents:</h4>
-      <ol>${answer.tableContents}</ol>
-      <hr>
-      <h4>Installation Instructions:</h4>
-      <p>${answer.installationInstructions}</p>
-      <hr>
-      <h4>Usage:</h4>
-      <p>${answer.usage}</p>
-      <hr>
-      <h4>Contributors:</h4>
-      <p>${answer.contributors}</p>
-      <hr>
-      <h4>Tests:</h4>
-      <p>${answer.tests}</p>
-      <hr>
-      <h4>Questions:</h4>
-      <p>${answer.questions}</p>
-      <hr>
-      <h4>Author Email:</h4><p>${response.data.email}</p>
-      <hr>
-      <h4>Author Picture:</h4>
-      <img src="${response.data.avatar_url}" alt="User avatar"/>
-      `;
+      //console.log(response.data);
+      
+      const readmeFileAxiosText = generateAxiosText(response.data);
 
-      fs.appendFile("README.md", readmeFileText, err => {
-          if (err) {
+      fs.appendFile(`${answer.userName}-README.md`, readmeFileAxiosText, err => {
+        if (err) {
             return console.log(err);
           }
-          console.log("The README.md file has been written!");
+          console.log("The axios text has been written!");
       })
+
+
+
     })
     .catch(function(err){
       console.log(err);
@@ -83,25 +55,27 @@ inquirer.prompt([
   });
 
 
-// function writeToFile(fileName, data) {
-//     fileName = data.name.toLowerCase().split(" ").join("") + ".json";
-//     fs.writeFile(fileName, JSON.stringify(data, null, "\t"), function(err){
-//         if(err) {
-//             return err;
-//         }
-//         else {
-//             console.log("Success!");
-//         }
-//     })
+
+function generateAxiosText(data){
+    return `
+- - -
+## Email:\n
+${data.email}
+- - -
+## Picture:\n
+![User Avatar](${data.avatar_url})
+`;
+};
+
+// function generateTableOfContents(){
+//     var contentSections = ["Title", "Description", "Installation", "Usage", "Contributors", "Tests", "Questions", "Email", "Picture"];
+    
+//     for(var i=0; i<contentSections; i++){
+//         var liEl = $("<li>");
+//         liEL = contentSections[i];
+//         var id = contentSections[i];
+//         liEl.attr("href", `#${id}`)
+//         $("#tc").append(liEl);
+//     }
 // }
-
-// function init() {
-
-// }
-
-// init();
-
-
-
-
-
+//   <li href="#pt">Project Title</li><li href="#pd">Project Description</li><li href="#iu">Installation</li><li href="#use">Usage</li><li href="#cont">Contributors</li><li href="#test">Tests</li><li href="#quest">Questions</li><li href="#em">Author Email</li><li href="#pic">Author Picture</li>

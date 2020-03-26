@@ -1,14 +1,14 @@
 
 # Project Title:
 
-Project Title
+title
 - - - 
-![badge](https://img.shields.io/static/v1?label=License&message=Proprietary&color=brightgreen)
+![badge](https://img.shields.io/static/v1?label=License&message=Public&color=brightgreen)
 ![awesome](https://cdn.rawgit.com/jongracecox/anybadge/master/examples/awesomeness.svg)
 - - -
 ## Project Description:
 
-Project Description
+description
 - - -
 ## Table of Contents:
   1. [Project Title](#project-title)

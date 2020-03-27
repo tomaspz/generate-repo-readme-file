@@ -36,6 +36,10 @@ node index.js
     * Questions (default: no questions)
 4. The user email and picture are retrieved from Github and added at the end of the README.md file.
 
+### Screenshot - CLI Generated README Markdown File
+
+![CLI Generated Readme File](./img/screenshot-CLI-created-readme.png)
+
 ### User Story
 
 ```

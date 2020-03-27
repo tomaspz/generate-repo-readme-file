@@ -67,15 +67,3 @@ ${data.email}
 `;
 };
 
-// function generateTableOfContents(){
-//     var contentSections = ["Title", "Description", "Installation", "Usage", "Contributors", "Tests", "Questions", "Email", "Picture"];
-    
-//     for(var i=0; i<contentSections; i++){
-//         var liEl = $("<li>");
-//         liEL = contentSections[i];
-//         var id = contentSections[i];
-//         liEl.attr("href", `#${id}`)
-//         $("#tc").append(liEl);
-//     }
-// }
-//   <li href="#pt">Project Title</li><li href="#pd">Project Description</li><li href="#iu">Installation</li><li href="#use">Usage</li><li href="#cont">Contributors</li><li href="#test">Tests</li><li href="#quest">Questions</li><li href="#em">Author Email</li><li href="#pic">Author Picture</li>

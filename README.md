@@ -20,8 +20,8 @@ A CLI application will allow for quick and easy generation of a project README f
 
 ### Installation Instructions in Your Repository
 
-1. Copy and paste the directory utils and all its contents in your repository.
-2. Copy and paste index.js and package.json into your repository.
+1. Copy and paste the directory __utils__ and all its contents in your repository directory.
+2. Copy and paste __index.js__ and __package.json__ into your repository directory.
 3. At the CLI, change to your repository directory.
 4. At the CLI, run: 
 

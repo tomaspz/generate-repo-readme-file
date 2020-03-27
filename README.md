@@ -32,12 +32,13 @@ A CLI application will allow for quick and easy generation of a project README f
 ```sh
 npm install
 ```
-5. At the CLI, run:
+5. After __npm__ has installed all the necessary dependencies, at the CLI, run:
 
 ```sh
 node index.js
 ```
-6. At the CLI, answer the questions. 
+6. At the CLI, type the answers to the questions invoked by the application and press the __Enter__ key to move to the next question. 
+7. When all the questions are finished, the username-README markdown file is created in your root repository directory.
 
 Notes:
 * Your GitHub username is mandatory in order to get your profile information (email and picture).

@@ -16,7 +16,11 @@ A CLI application will allow for quick and easy generation of a project README f
 
 ### Screenshot - CLI Generated README Markdown File
 
-![CLI Generated Readme File](./img/screenshot-CLI-created-readme.png)
+![CLI Generated Readme File Image](./img/screenshot-CLI-created-readme.png)
+
+## Repository URL
+
+![CLI Generated Readme File Repo](https://github.com/tomaspz/generate-repo-readme-file)
 
 ### Installation Instructions in Your Repository
 
@@ -33,6 +37,14 @@ npm install
 ```sh
 node index.js
 ```
+6. At the CLI, answer the questions. 
+
+Notes:
+* Your GitHub username is mandatory in order to get your profile information (email and picture).
+* The license question will create a badge witht the choice you select.
+* The project title and description are important, although you can always edit them later.
+* You can accept the rest of the defaults by pressing the __Enter__ key at the CLI, or you can write your own choices.
+* The README file created will have your GitHub username preppended in the following format: __username-README.md__.
 
 ### What this application does
 

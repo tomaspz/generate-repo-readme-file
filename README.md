@@ -72,20 +72,22 @@ node index.js
 ## User Story
 
 ```
-AS A developer
+AS a developer that uses the command line interface (CLI) very often
 
-I WANT a README generator
-
-SO THAT I can easily put together a good README for a new project
+I WANT a CLI README generator
+SO THAT I can easily put together a good README for a new project.
 
 WHEN I start my project in the command-line,
-THEN I want to easily answer the required questions to create a good README.md file,
+THEN I want to easily answer the necessary questions to create a good README.md file,
 
-WHEN I work on the README.md file,
-THEN I want my GitHub email and picture included automatically,
+WHEN I want to create a new README.md file,
+AND GIVEN that I have a GitHub profile and a repository,
+WHEN prompted for my GitHub username and repo specific information,
+THEN my own GitHub email and picture are included automatically in the README file,
 
-WHEN the README file is generated,
-THEN I just need some small editing to finish it
+WHEN the README file for the repo is generated,
+THEN I get a good based skeleton for my README file,
+THEN I just need some small editing to finalize it for production.
 ```
 
 ## Suggestions for a good README file

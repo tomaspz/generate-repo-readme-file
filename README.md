@@ -20,7 +20,7 @@ A CLI application will allow for quick and easy generation of a project README f
 
 ## Repository URL
 
-![CLI Generated Readme File Repo](https://github.com/tomaspz/generate-repo-readme-file)
+[TPZ CLI Generated Readme File Repo](https://github.com/tomaspz/generate-repo-readme-file)
 
 ### Installation Instructions in Your Repository
 

@@ -1,6 +1,6 @@
 # Generate Repository README.md File
 
-![Animated Gif](./cli-readme-file.gif)
+![Animated Gif](./img/cli-readme-file.gif)
 
 The README.md file is extremely important because it introduces and explains your projects. It contains vital information to understand what the project is about. It should answer most of the audience's questions about how to use the repository and collaborate.
 
@@ -25,18 +25,16 @@ node index.js
 1. The user is prompted for their GitHub username. 
 2. In the background, the GitHub username is used to retrieve the user's GitHub email and profile image. 
 3. The user is prompted with questions about their project:
-    * At least one badge specific to the repository
-    * User GitHub profile picture
-    * User GitHub email
     * Project title
-    * Description
-    * Table of Contents
-    * Installation
-    * Usage
-    * License
-    * Contributing
-    * Tests
-    * Questions
+    * Project Description
+    * Table of Contents (default: TOC with these bullet points)
+    * Installation (default: npm install)
+    * Usage (default: follow instructions)
+    * License (choices: MIT, Public, GNU, Copyleft, Propietary)
+    * Contributing (default: no contributors)
+    * Tests (default: no tests)
+    * Questions (default: no questions)
+4. The user email and picture are retrieved from Github and added at the end of the README.md file.
 
 ### User Story
 

@@ -14,7 +14,7 @@ The README file can be written in any text file format, but the most common is _
 
 A CLI application will allow for quick and easy generation of a project README file to get started quickly. This will allow a project creator to spend more time working on finishing the project and less time creating a good README file.
 
-### Screenshot - CLI Generated README Markdown File
+## Screenshot - CLI Generated README Markdown File
 
 ![CLI Generated Readme File Image](./img/screenshot-CLI-created-readme.png)
 
@@ -22,7 +22,7 @@ A CLI application will allow for quick and easy generation of a project README f
 
 [TPZ CLI Generated Readme File Repo](https://github.com/tomaspz/generate-repo-readme-file)
 
-### Installation Instructions in Your Repository
+## Installation Instructions in Your Repository
 
 1. Copy and paste the directory __utils__ and all its contents in your repository directory.
 2. Copy and paste __index.js__ and __package.json__ into your repository directory.
@@ -46,7 +46,7 @@ Notes:
 * You can accept the rest of the defaults by pressing the __Enter__ key at the CLI, or you can write your own choices.
 * The README file created will have your GitHub username preppended in the following format: __username-README.md__.
 
-### What this application does
+## What this application does
 
 This is a command-line application that dynamically generates a README file from a user's input. The application is invoked at the CLI with the command:
 
@@ -68,7 +68,7 @@ node index.js
     * Questions (default: no questions)
 4. The user email and picture are retrieved from Github and added at the end of the README.md file.
 
-### User Story
+## User Story
 
 ```
 AS A developer
@@ -87,7 +87,7 @@ WHEN the README file is generated,
 THEN I just need some small editing to finish it
 ```
 
-### Suggestions for a good README file
+## Suggestions for a good README file
 
 Every project is different and some suggestions may not apply to the project. It is always better to have a too long and detailed README file than a too short one. Suggestions:
 

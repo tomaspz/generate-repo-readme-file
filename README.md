@@ -14,6 +14,10 @@ The README.md file can be written in any text file format, but the most common i
 
 A CLI application will allow for quick and easy generation of a project README.md file to get started quickly. This will allow a project creator to spend more time working on finishing the project and less time creating a good README.md file.
 
+### Screenshot - CLI Generated README Markdown File
+
+![CLI Generated Readme File](./img/screenshot-CLI-created-readme.png)
+
 ### What this application does
 
 This is a command-line application that dynamically generates a README.md from a user's input. The application is invoked at the CLI with the command:
@@ -35,10 +39,6 @@ node index.js
     * Tests (default: no tests)
     * Questions (default: no questions)
 4. The user email and picture are retrieved from Github and added at the end of the README.md file.
-
-### Screenshot - CLI Generated README Markdown File
-
-![CLI Generated Readme File](./img/screenshot-CLI-created-readme.png)
 
 ### User Story
 
@@ -70,7 +70,7 @@ Every project is different and some suggestions may not apply to the project. It
 * __Features__. 
 * __Project Alternatives__.
 * __Badges__: these are small images with metadata. They can indicate multiple things, like which tests passed for the project. We used [Shields](https://shields.io/) to add some badges. 
-* __Screenshots, Gifs, or Videos__: it is a good idea to include screenshots, animated gifs or videos. We used [ttygif](https://github.com/icholy/ttygif) for the animated gifs.
+* __Screenshots, Gifs, or Videos__: it is a good idea to include screenshots, animated gifs or videos. We used [Giphy Capture](https://apps.apple.com/us/app/giphy-capture-the-gif-maker/id668208984?mt=12) to create an animated gif. Showing how the command line works with a animated gif is very useful for the user.
 * __Requirements__: include all necessary information if the project only runs in a specific context (Ex: ES6, MacOS X) or has dependencies that have to be installed manually.
 * __Installation Instructions__: consider that whoever is reading the readme.md file is a novice and need assistance with the installation. List each step in the installation process to remove any ambiguity and make things easier for the user. 
 * __Usage__: provide a lot of examples to the user and show the expected output. Provide links to the examples if they are too long to include in the Readme.md file.

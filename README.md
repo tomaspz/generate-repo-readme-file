@@ -20,15 +20,15 @@ A CLI application will allow for quick and easy generation of a project README f
 
 ### Installation Instructions in Your Repository
 
-1.- Copy and paste the directory utils and all its contents in your repository
-2.- Copy and paste index.js and package.json into your repository
-3.- At the CLI, change to your repository directory
-4.- Run 
+1. Copy and paste the directory utils and all its contents in your repository.
+2. Copy and paste index.js and package.json into your repository.
+3. At the CLI, change to your repository directory.
+4. At the CLI, run: 
 
 ```sh
 npm install
 ```
-5.- Run
+5. At the CLI, run:
 
 ```sh
 node index.js
